@@ -12,5 +12,4 @@ jobs:
     steps:
       - name: Ping Render App
         run: |
-          # Send the ping and close connection after 5 seconds
-          curl --silent --max-time 5 https://gfg-vu.onrender.com
+          curl -I https://gfg-vu.onrender.com
