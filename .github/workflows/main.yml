@@ -3,7 +3,7 @@ name: Keep Render App Alive
 on:
   schedule:
     # Run every 10 minutes
-    - cron: '*/10 * * * *'
+    - cron: '*/6 * * * *'
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
