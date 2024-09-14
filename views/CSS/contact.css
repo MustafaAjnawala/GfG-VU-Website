@@ -1,0 +1,22 @@
+.contact-us{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -176px;
+    z-index: -1;
+}
+
+@media (max-width: 560px){
+    .contact-us{
+        margin-bottom: -143px;
+    }
+}
+
+@media (max-width: 380px){
+    .contact-us{
+        margin-bottom: -136px;
+    }
+}
