@@ -8,7 +8,7 @@ const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
-
+let sec = 0;
 //setting thte view engine to render dynamic html files
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
@@ -30,22 +30,14 @@ const pool = mysql.createPool({
   database: process.env.DB
   
 });
-console.log("SQLPORT:", process.env.SQLPORT);
-console.log("MYSQL_URL:", process.env.MYSQL_URL);
-console.log("USERNAME:", process.env.U);
-console.log("PWD:", process.env.PWDD);
-console.log("DB:", process.env.DB);
-// const pool = mysql.createPool({
-//     connectionLimit: 5,
-//     port : 22566,
-//     host: process.env.MYSQL_URL,
-//     user: 'avnadmin',
-//     password: 'AVNS_MJgZ-UpvWRgkRJkxFeJ',
-//     database: 'defaultdb'
-    
-// });
+// console.log("SQLPORT:", process.env.SQLPORT);
+// console.log("MYSQL_URL:", process.env.MYSQL_URL);
+// console.log("USERNAME:", process.env.U);
+// console.log("PWD:", process.env.PWDD);
+// console.log("DB:", process.env.DB);
 
 app.get('/',(req,res)=>{
+  sec = 0;
   pool.query('select * from Upcoming_events',(error,upcomingResults)=>{
     if(error){
       console.error('Error fetching upcoming events :',error);
@@ -79,6 +71,7 @@ app.post('/login', (req, res) => {
                 if (password === userData.password) {
                     // Login successful
                     const { username, name } = userData;
+                    sec = 1;
                     return res.redirect('/panel');
                 } else {
                   return res.status(401).send('Invalid username or password');
@@ -91,6 +84,8 @@ app.post('/login', (req, res) => {
 });
 
 app.get('/panel', (req, res) => {
+  if(sec===1){
+
   pool.query('SELECT * FROM Upcoming_events', (error, upcomingEvents) => {
     if (error) {
       console.error('Error fetching events:', error);
@@ -104,6 +99,10 @@ app.get('/panel', (req, res) => {
       res.render('panel', { upcomingEvents: upcomingEvents, pastEvents: pastEvents });
     });
   });
+}
+else{
+  return res.status(500).send('Unauthorized Access');
+}
 });
 
   //post request to add a new event into the list
