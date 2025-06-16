@@ -2,7 +2,8 @@
 
 Welcome to the official repository for the **GFG (GeeksforGeeks) Student Chapter, Vishwakarma Universit** website. This site serves as the digital hub for our student community—showcasing events, resources, team members, and opportunities.
 
-![GFG VU Banner](https://github.com/user-attachments/assets/ccb44b5f-a0eb-4cc8-8328-34a87f47ad98)
+![image](https://github.com/user-attachments/assets/44d4282c-3312-441d-badf-a67c9ab1f0e5)
+
 ---
 
 ## 🚀 Live Demo
@@ -12,6 +13,6 @@ Check out the live website: [https://gfg-vu.onrender.com/](https://gfg-vu.onrend
 ---
 
 ## 💻 Website Images
-![image](https://github.com/user-attachments/assets/b5219a43-6f5a-4dc0-9fa8-0078f22aba1d)
-![image](https://github.com/user-attachments/assets/2e40f3f7-1340-4a7e-a4a0-1c12256af496)
-![image](https://github.com/user-attachments/assets/f08a1448-f95f-43a1-b2c5-8295b94b6b0d)
+![image](https://github.com/user-attachments/assets/f36b0c51-24e8-401c-bc1f-453b1e081f0c)
+![image](https://github.com/user-attachments/assets/522e11ce-4777-46fb-b58e-17d12a27d49f)
+![image](https://github.com/user-attachments/assets/a8f1ff44-6a16-4b62-b93f-c5916ce4ec26)
