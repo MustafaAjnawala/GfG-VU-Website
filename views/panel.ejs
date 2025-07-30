@@ -54,7 +54,7 @@
                     </td>
                     <td>
                         <form action="/delete-event" method="POST" onsubmit="confirmDelete(event)">
-                            <input type="hidden" name="eventID" value="<%= event.eventID %>">
+                            <input type="hidden" name="eventID" value="<%= event._id %>">
                             <button type="submit">Delete</button>
                         </form>
                     </td>
@@ -90,7 +90,7 @@
                     </td>
                     <td>
                         <form action="/delete-past-event" method="POST" onsubmit="confirmDelete(event)">
-                            <input type="hidden" name="eventID" value="<%= event.PastEventID %>">
+                            <input type="hidden" name="eventID" value="<%= event._id %>">
                             <button type="submit">Delete</button>
                         </form>
                     </td>
