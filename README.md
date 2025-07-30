@@ -13,6 +13,11 @@ Check out the live website: [https://gfg-vu.onrender.com/](https://gfg-vu.onrend
 ---
 
 ## 💻 Website Images
+Landing Page Images
 ![image](https://github.com/user-attachments/assets/f36b0c51-24e8-401c-bc1f-453b1e081f0c)
 ![image](https://github.com/user-attachments/assets/522e11ce-4777-46fb-b58e-17d12a27d49f)
 ![image](https://github.com/user-attachments/assets/a8f1ff44-6a16-4b62-b93f-c5916ce4ec26)
+
+Admin Panel
+<img width="1906" height="862" alt="image" src="https://github.com/user-attachments/assets/ecffde7d-3121-48bc-bd24-9c000cf91ded" />
+<img width="1888" height="686" alt="image" src="https://github.com/user-attachments/assets/a32e0e10-6d7c-44bd-b5d4-c31a6728ed4b" />
